@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string[] ReadArrStr(string text)
+{
+    Console.Write(text);
+    return Console.ReadLine().Split(' ');
+}
+
+string[] str = ReadArrStr("Введите массив строк: ");
